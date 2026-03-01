@@ -109,10 +109,10 @@ ul {
   content: "";
   width: 100%;
   height: 4px;
-  bottom:10px;
+  bottom: 10px;
   left: 0;
   border-radius: 2px;
-  background-color: var(--pressed-state)
+  background-color: var(--pressed-state);
 }
 
 .header-adress {
@@ -155,6 +155,8 @@ ul {
   color: var(--white-background);
   background-color: var(--primary-brand);
   cursor: pointer;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+
 }
 
 .hero-button:is(:hover, :focus) {
@@ -409,4 +411,25 @@ ul {
 
 .footer-text {
   max-width: 264px;
+}
+
+.footer-menu {
+  gap: 120px;
+}
+
+.footer .column {
+  max-width: 264px;
+}
+
+.footer .our-team-social-icons {
+  gap: 16px;
+}
+
+.footer .social-media-title {
+  margin-bottom: 16px;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: var(--white-background);
+  text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);;
 }
