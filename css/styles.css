@@ -53,7 +53,29 @@ ul {
   list-style-type: none;
 }
 
+.flex {
+  display: flex;
+}
+
 /* header */
+
+.header {
+  border-bottom: 1px solid var(--accent);
+}
+
+.header-container {
+  justify-content: space-between;
+}
+
+.header-nav {
+  gap: 76px;
+  align-items: center;
+}
+
+.nav-items,
+.header-adress-items {
+  gap: 40px;
+}
 
 .logo-text {
   font-family: "Raleway", sans-serif;
@@ -72,10 +94,25 @@ ul {
   font-weight: 500;
   letter-spacing: 0.02em;
   line-height: 1.5;
+  display: inline-block;
+  padding-block: 24px;
+  position: relative;
+  transition: color 0.3s ease-in-out;
 }
 
 .nav-item-link:is(:hover, :focus) {
   color: var(--pressed-state);
+}
+
+.nav-item-link:active:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 4px;
+  bottom:10px;
+  left: 0;
+  border-radius: 2px;
+  background-color: var(--pressed-state)
 }
 
 .header-adress {
@@ -86,6 +123,11 @@ ul {
   color: var(--text);
   letter-spacing: 0.02em;
   line-height: 1.5;
+}
+
+.header-adress-item a {
+  display: inline-block;
+  padding-block: 24px;
 }
 
 .header-adress-link:is(:hover, :focus) {
@@ -120,6 +162,17 @@ ul {
 }
 
 /* our features */
+
+.our-features-icon {
+  border: 1px solid var(--subtle-text);
+  width: 100%;
+  height: 112px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8px;
+  background-color: var(--light);
+  border-radius: 4px;
+}
 
 .our-features-title {
   font-size: 20px;
@@ -166,12 +219,24 @@ ul {
   text-align: center;
   line-height: 1.5;
   color: var(--text);
+  margin-bottom: 8px;
+}
+
+.our-team-social-icons {
+  justify-content: space-between;
+}
+
+.our-team-social-icon {
+  width: 40px;
+  height: 40px;
+  background-color: var(--logo-color);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* portfolio */
-
-.portfolio {
-}
 
 .portfolio-title {
   font-weight: 700;
@@ -229,40 +294,13 @@ ul {
   padding-block: 120px;
 }
 
-.header {
-  /* padding-block: 24px; */
-  border-bottom: 1px solid var(--accent);
-}
-
-.header-container {
-  justify-content: space-between;
-  /* background-color: #404bbf; */
-}
-
-.flex {
-  display: flex;
-}
-
-.header-nav {
-  /* background-color: #8e8f99; */
-  gap: 76px;
-}
-.nav-items,
-.header-adress-items {
-  gap: 40px;
-}
-
-.nav-item-link,
-.header-adress-item a {
-  display: inline-block;
-  padding-block: 24px;
-}
-
 /* ///////////////////////////////////////// */
 
 .hero {
   padding-block: 188px;
-  background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bg/people-office\ 1.png);
+  background:
+    linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url(../images/bg/people-office\ 1.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
