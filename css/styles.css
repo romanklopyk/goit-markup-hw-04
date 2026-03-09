@@ -298,7 +298,8 @@ ul {
 }
 
 .our-team-social-icons {
-    justify-content: space-between;
+    /*justify-content: space-between;*/
+    gap: 24px;
 }
 
 .our-team-social-link {
