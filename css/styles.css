@@ -145,7 +145,7 @@ ul {
     line-height: 1.5;
 }
 
-.header-address-item a {
+.header-address-link {
     display: inline-block;
     padding-block: 24px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -270,7 +270,7 @@ ul {
     border-radius: 0 0 4px 4px;
 }
 
-.our-team-item > img {
+.our-team-img {
     width: 100%;
     object-fit: cover;
 }
@@ -313,7 +313,7 @@ ul {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.our-team-social-link > svg {
+.our-team-social-link-img {
     fill: var(--light);
 }
 
