@@ -55,6 +55,16 @@ ul {
     list-style-type: none;
 }
 
+button{
+    font-family: inherit;
+    color: currentColor;
+}
+
+input{
+    font-family: inherit;
+
+}
+
 .flex {
     display: flex;
 }
