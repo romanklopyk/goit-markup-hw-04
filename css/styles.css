@@ -123,7 +123,7 @@ ul {
     color: var(--pressed-state);
 }
 
-.nav-item-link.active:after {
+.nav-item-link.active::after {
     position: absolute;
     content: "";
     width: 100%;
